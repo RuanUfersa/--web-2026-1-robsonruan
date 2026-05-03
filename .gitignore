@@ -1,28 +1,3 @@
-# Dependências
 node_modules/
-
-# Banco de dados SQLite
-*.db
-*.sqlite
-
-# Logs
-*.log
-npm-debug.log*
-
-# Arquivos de sistema
+css/styles.css
 .DS_Store
-Thumbs.db
-
-# Ambiente
-.env
-.env.local
-
-# IDEs
-.vscode/
-.idea/
-*.swp
-*.swo
-
-# Dados JSON (desenvolvimento local)
-data/*.json
-!data/.gitkeep
