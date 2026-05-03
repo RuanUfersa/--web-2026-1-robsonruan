@@ -3,16 +3,18 @@ frontend:
   phases:
     preBuild:
       commands:
-        - npm ci
+        - echo "No build required for static files"
     build:
       commands:
-        - npm run build
+        - echo "Static site deployment"
   artifacts:
     baseDirectory: .
     files:
       - '**/*'
       - '!node_modules/**/*'
+      - '!src/**/*'
+      - '!tailwind.config.js'
+      - '!package.json'
+      - '!package-lock.json'
   cache:
-    paths:
-      - node_modules/**/*
-      - .npm/**/*
+    paths: []
